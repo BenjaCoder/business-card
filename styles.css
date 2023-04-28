@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    font-size: 108%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    box-shadow: 3px 4px 5px #589D7C;
+    border-radius: 12px;
+}
+
+.card {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #CBE2D7;
+    color: #42765D;
+    border-bottom: 6px solid #589D7C;
+    border-radius: 12px;
+}
+
+#text-info h3:hover, p:hover, h4:hover {
+    animation-name: text-highlight;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.avatar:hover {
+    animation-name: avatar-round;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text-highlight {
+  from {}
+  to {
+      box-shadow: 3px 3px 5px #589D7C;
+      border-radius: 5px;
+      background: #DBF2E7;
+    }
+}
+
+@keyframes avatar-round {
+    from{}
+    to {
+        border-radius: 100%;
+    }
+}
